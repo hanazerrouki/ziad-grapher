@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziad Grapher - مصورة احترافية للمناسبات</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="images/logoz.png" alt="Ziad Grapher Logo">
+                <span>Ziad Grapher</span>
+            </a>
+            
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من أنا</a></li>
+                    <li><a href="#portfolio">المعرض</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#testimonials">آراء العملاء</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+        </div>
+        
+        <div class="container">
+        <div class="hero-content">
+    <h1>نصنع لك لحظات لا تُنسى في كل مناسبة</h1>
+    <p>خدماتنا تشمل تنظيم الأعراس، تنسيق الحفلات، التصوير الاحترافي، تصميم الهدايا، والعديد من المفاجآت السعيدة!</p>
+    <a href="#contact" class="btn">احجز خدمتك الآن</a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">من أنا</h2>
+            
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="images/hadjerziad.png" alt="Ziad Grapher">
+                </div>
+             <div class="about-content">
+
+    <h3>أنا هاجر زياد، صاحبة "Ziad Grapher".</h3>
+
+    <p>عاشقة للتصوير وفنانة في التقاط اللحظات كما هي، بعفويتها وصدقها. أؤمن أن كل لحظة جميلة تستحق أن تُوثق وتُروى من جديد.</p>
+
+    <p>من تصوير أعراس مفعمة بالمشاعر، إلى حفلات التخرج واللقاءات العائلية، أحرص على تخليد كل تفصيلة بابتسامة صادقة أو نظرة عابرة. كما أقدّم خدمات تصوير المناسبات الخاصة، أعياد الميلاد، وجلسات الصور الشخصية بمستوى احترافي يعكس ذوقكم الفريد.</p>
+
+    <p>لم يتوقف شغفي عند التصوير فقط، بل وسّعت نطاق خدماتي لتشمل تنظيم الأعراس، كراء تصديرات العروس الفاخرة، خدمة الماشطة وتجهيز العروس، فرقة "ممنوع التصوير" والبليبوشات، بالإضافة إلى الدي جي لإحياء الحفلات، وحتى تصوير المنتجات بدقة عالية لمساعدتك في إبراز علامتك التجارية.</p>
+
+    <p>مع كل خدمة أقدّمها، أضع راحة العروس والعائلة أو صاحب المشروع في المقدّمة، وأسعى لأن أجعل من كل تجربة مع "Ziad Grapher" لحظة لا تُنسى.</p>
+
+    <a href="#portfolio" class="btn btn-outline">تصفح أعمالي</a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Section -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">معرض الأعمال</h2>
+        
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="graduation">حفلات التخرج</button>
+            <button class="filter-btn" data-filter="wedding">الأعراس</button>
+            <button class="filter-btn" data-filter="event">المناسبات</button>
+            <button class="filter-btn" data-filter="products">فرقة ممنوع التصوير</button>
+            <button class="filter-btn" data-filter="personal">جلسات تصوير شخصية</button>
+            <button class="filter-btn" data-filter="dj">ديجي DJ</button>
+            <button class="filter-btn" data-filter="product-photo">تصوير منتجات</button>
+            <button class="filter-btn" data-filter="tasdira">كراء تصديرة</button>
+            <button class="filter-btn" data-filter="wedding-org">تنظيم الأعراس</button>
+        </div>
+        
+        <div class="portfolio-grid">
+            <!-- حفلات التخرج -->
+            <div class="portfolio-item" data-category="graduation">
+                <img src="images/graduation/image.png" alt="Graduation Photo">
+                <div class="portfolio-overlay">
+                    <h3>حفل التخرج</h3>
+                    <p>تصوير احترافي لطلبة الجامعات</p>
+                </div>
+            </div>
+
+            <!-- الأعراس -->
+            <div class="portfolio-item" data-category="wedding">
+                <img src="images/wedings/bride1.png" alt="Wedding Photo">
+                <div class="portfolio-overlay">
+                    <h3>حفل زفاف</h3>
+                    <p>تصوير كامل ليوم العرس</p>
+                </div>
+            </div>
+
+            <!-- المناسبات -->
+            <div class="portfolio-item" data-category="event">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Event Photo">
+                <div class="portfolio-overlay">
+                    <h3>حفل عيد ميلاد</h3>
+                    <p>تصوير مناسبات خاصة</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="event">
+                <img src="images/propsal/image.png" alt="Event Photo">
+                <div class="portfolio-overlay">
+                    <h3>حفل خطوبة</h3>
+                    <p>تصوير المناسبات العائلية</p>
+                </div>
+            </div>
+
+            <!-- فرقة ممنوع التصوير -->
+            <div class="portfolio-item" data-category="products">
+                <img src="images/products/image.png" alt="no Photo">
+                <div class="portfolio-overlay">
+                    <h3>فرقة ممنوع التصوير</h3>
+                    <p>فرقة ممنوع التصوير بليبوشات و الاستقبال</p>
+                </div>
+            </div>
+
+            <!-- جلسات تصوير شخصية -->
+            <div class="portfolio-item" data-category="personal">
+                <img src="images/personal/image.png" alt="personal Photo">
+                <div class="portfolio-overlay">
+                    <h3>جلسات تصوير شخصية</h3>
+                    <p>تصوير احترافي</p>
+                </div>
+            </div>
+
+            <!-- ديجي DJ -->
+            <div class="portfolio-item" data-category="dj">
+                <img src="images/dj/image.png" alt="DJ Service">
+                <div class="portfolio-overlay">
+                    <h3>خدمة ديجي DJ</h3>
+                    <p>توفير موسيقى احترافية للحفلات</p>
+                </div>
+            </div>
+
+            <!-- تصوير منتجات -->
+            <div class="portfolio-item" data-category="product-photo">
+                <img src="images/product/image.png" alt="Product Photography">
+                <div class="portfolio-overlay">
+                    <h3>تصوير منتجات</h3>
+                    <p>تصوير احترافي للمنتجات بغرض التسويق</p>
+                </div>
+            </div>
+
+            <!-- كراء تصديرة -->
+            <div class="portfolio-item" data-category="tasdira">
+                <img src="images/tasdira/image.png" alt="Tasdira Rental">
+                <div class="portfolio-overlay">
+                    <h3>كراء تصديرة العروس</h3>
+                    <p>مجموعة متنوعة من تصديرات العروس للكراء</p>
+                </div>
+            </div>
+
+            <!-- تنظيم الأعراس -->
+            <div class="portfolio-item" data-category="wedding-org">
+                <img src="images/wedings/weding1.png" alt="Wedding Organization">
+                <div class="portfolio-overlay">
+                    <h3>تنظيم الأعراس</h3>
+                    <p>تنظيم شامل واحترافي لحفلات الزفاف</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">الخدمات</h2>
+        
+        <div class="services-container">
+            <!-- تصوير حفلات التخرج -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>تصوير حفلات التخرج</h3>
+                <p>احفظ ذكرى تخرجك بصور احترافية تعبر عن فرحتك وإنجازك</p>
+                <ul class="service-features">
+                    <li>جلسات فردية أو جماعية</li>
+                    <li>أماكن خارجية أو داخلية</li>
+                    <li>تسليم الصور خلال 48 ساعة</li>
+                    <li>عدد غير محدود من الصور</li>
+                    <li>تعديلات احترافية</li>
+                </ul>
+                <a href="#contact" class="btn">احجز الآن</a>
+            </div>
+
+            <!-- تصوير الأعراس -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-ring"></i>
+                </div>
+                <h3>تصوير الأعراس</h3>
+                <p>أحفظ كل لحظة من يوم زفافك بصور تعبر عن سعادتك</p>
+                <ul class="service-features">
+                    <li>تغطية كاملة ليوم الزفاف</li>
+                    <li>ألبوم رقمي + فيديو قصير</li>
+                    <li>خدمة جلسة قبل العرس</li>
+                    <li>تصوير جميع التفاصيل</li>
+                    <li>تعديلات احترافية</li>
+                </ul>
+                <a href="#contact" class="btn">احجز الآن</a>
+            </div>
+
+            <!-- تصوير المناسبات -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
+                <h3>تصوير المناسبات</h3>
+                <p>احفظ ذكريات مناسباتك السعيدة بصور احترافية</p>
+                <ul class="service-features">
+                    <li>أعياد ميلاد، حفلات عائلية</li>
+                    <li>تصوير احترافي + تعديل الصور</li>
+                    <li>جلسات قصيرة أو طويلة</li>
+                    <li>تسليم سريع للصور</li>
+                    <li>خيارات طباعة متاحة</li>
+                </ul>
+                <a href="#contact" class="btn">احجز الآن</a>
+            </div>
+
+
+     <!-- خدمة تنظيم الأعراس -->
+<div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-chess-king"></i>
+    </div>
+    <h3>تنظيم الأعراس</h3>
+    <p>نقدّم لكِ خدمة شاملة لتنظيم حفلك من البداية حتى النهاية، لتحصلي على زفاف أحلامك بلا عناء.</p>
+    <ul class="service-features">
+        <li>تنسيق شامل للديكور والإضاءة</li>
+        <li>برمجة فقرات الحفل وتوقيتها</li>
+        <li>إدارة فرق العمل (تصوير، دي جي، ضيافة...)</li>
+        <li>مرافقة العروس خطوة بخطوة</li>
+        <li>خدمة حسب ذوق العروس وميزانيتها</li>
+    </ul>
+    <a href="#contact" class="btn">احجز الآن</a>
+</div>
+
+
+            <!-- فرقة ممنوع التصوير بليبوشات والاستقبال -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>فرقة ممنوع التصوير + بليبوشات والاستقبال</h3>
+                <ul class="service-features">
+                    <li>تنظيم دخول الضيوف</li>
+                    <li>مراقبة التصوير الغير مرخص</li>
+                    <li>تنسيق البليبوشات باحترافية</li>
+                    <li>استقبال الضيوف بأناقة</li>
+                    <li>فريق نسائي أو مختلط حسب الطلب</li>
+                </ul>
+                <a href="#contact" class="btn">احجز الآن</a>
+            </div>
+
+
+<!-- خدمة الماشطة وتجهيز العروس -->
+<div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-crown"></i>
+    </div>
+    <h3>خدمة الماشطة وتجهيز العروس</h3>
+    <ul class="service-features">
+        <li>تلبيس العروس باحترافية</li>
+        <li>توفير إكسسوارات فاخرة (تاج، عقد، سوار...)</li>
+        <li>مرافقة طوال فترة التحضير</li>
+        <li>تثبيت اللباس والحلي بعناية</li>
+        <li>خدمة في المنزل أو قاعة الحفل</li>
+    </ul>
+    <a href="#contact" class="btn">احجز الآن</a>
+</div>
+
+
+
+<!-- خدمة الدي جي DJ -->
+<div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-music"></i>
+    </div>
+    <h3>خدمة الدي جي DJ</h3>
+    <ul class="service-features">
+        <li>تشكيلة موسيقية متنوعة حسب ذوقك</li>
+        <li>مؤثرات صوتية وإضاءة احترافية</li>
+        <li>تنسيق مسبق لأغاني الدخول واللحظات الخاصة</li>
+        <li>أجهزة صوت عالية الجودة</li>
+        <li>دي جي نسائي أو رجالي حسب الطلب</li>
+    </ul>
+    <a href="#contact" class="btn">احجز الآن</a>
+</div>
+
+<!-- خدمة كراء تصديرة العروس -->
+<div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-diagnoses"></i>
+    </div>
+    <h3>كراء تصديرة العروس</h3>
+    <p>نوفر لكِ تصديرات تقليدية وعصرية للإيجار، بتصاميم فاخرة تليق بأجمل ليلة في حياتك.</p>
+    <ul class="service-features">
+        <li>تشكيلة متنوعة: تقليدية، عصرية، وراقية</li>
+        <li>إكسسوارات مرافقة لكل طقم</li>
+        <li>مقاسات متعددة تناسب جميع الأجسام</li>
+        <li>تنظيف وتعقيم قبل وبعد كل استخدام</li>
+        <li>إمكانية التجربة المسبقة قبل الحجز</li>
+    </ul>
+    <a href="#contact" class="btn">احجز الآن</a>
+</div>
+
+
+
+
+
+
+            <!-- تصوير صور شخصية -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h3>تصوير صور شخصية</h3>
+                <ul class="service-features">
+                    <li>صور احترافية للسوشيال ميديا</li>
+                    <li>صور CV والملف المهني</li>
+                    <li>خلفيات متنوعة ومخصصة</li>
+                    <li>جلسات داخلية بإضاءة احترافية</li>
+                    <li>تسليم الصور بتعديلات كاملة</li>
+                </ul>
+                <a href="#contact" class="btn">احجز الآن</a>
+            </div>
+
+
+<!-- خدمة تصوير المنتجات -->
+<div class="service-card">
+    <div class="service-icon">
+        <i class="fas fa-box-open"></i>
+    </div>
+    <h3>تصوير المنتجات</h3>
+    <ul class="service-features">
+        <li>خلفيات احترافية ومناسبة للعلامة التجارية</li>
+        <li>تصوير لجميع أنواع المنتجات (أزياء، إكسسوارات، أطعمة...)</li>
+        <li>تعديلات متقدمة لإبراز جمالية المنتج</li>
+        <li>صور عالية الجودة للاستخدام في المتاجر الإلكترونية والسوشيال ميديا</li>
+        <li>تسليم سريع للصور بصيغ متعددة</li>
+    </ul>
+    <a href="#contact" class="btn">احجز الآن</a>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section-title">آراء العملاء</h2>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-slider">
+                <!-- Testimonial Image Slide 1 -->
+                <div class="testimonial-slide active">
+                    <div class="testimonial-image">
+                        <img src="images/reviews/rv0.png" alt="تعليق عميل">
+                    </div>
+                </div>
+
+                <!-- Testimonial Image Slide 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-image">
+                        <img src="images/reviews/rev1.png" alt="تعليق عميل">
+                    </div>
+                </div>
+
+                <!-- Testimonial Image Slide 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-image">
+                        <img src="images/reviews/rv3.png" alt="تعليق عميل">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-slide="0"></div>
+                <div class="testimonial-dot" data-slide="1"></div>
+                <div class="testimonial-dot" data-slide="2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>تواصل مع Ziad Grapher</h3>
+                    <p>لحجز جلسة تصوير أو الاستفسار عن الخدمات، يمكنك التواصل معنا عبر أي من الطرق التالية:</p>
+                    
+               <ul class="contact-details">
+    <li>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+213776575143">+213 776 575 143</a>
+    </li>
+    <li>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/213776575143" target="_blank">+213 776 575 143</a>
+    </li>
+    <li>
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/ziad_grapher" target="_blank">@ziad_grapher</a>
+    </li>
+    <li>
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://www.google.com/maps/place/Bouira,+Algeria" target="_blank">Bouira, Algeria</a>
+    </li>
+</ul>
+
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ziad_grapher?igsh=ZmVvd2NuaGlnNDBp"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!--
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">نوع الخدمة</label>
+                            <select id="service" name="service" required>
+                                <option value="">اختر الخدمة</option>
+                                <option value="graduation">تصوير حفلات التخرج</option>
+                                <option value="wedding">تصوير الأعراس</option>
+                                <option value="event">تصوير المناسبات</option>
+                                <option value="other">خدمة أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">التاريخ المقترح (اختياري)</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">إرسال الرسالة</button>
+                    </form>
+        
+                </div>
+                   -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Ziad Grapher</h3>
+                    <p>مصور احترافي متخصص في تصوير حفلات التخرج، الأعراس، والمناسبات الخاصة. نقدم خدمات تصوير عالية الجودة لتحويل لحظاتك إلى ذكريات خالدة.</p>
+                 <div class="social-links">
+    <a href="https://www.facebook.com/h.b.photography" target="_blank" style="text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/ziad_grapher?igsh=ZmVvd2NuaGlnNDBp" target="_blank" style="text-decoration: none;"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/213776575143" target="_blank" style="text-decoration: none;"><i class="fab fa-whatsapp" ></i></a>
+</div>
+
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من أنا</a></li>
+                        <li><a href="#portfolio">المعرض</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#testimonials">آراء العملاء</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>الخدمات</h3>
+          <ul class="footer-links">
+    <li><a href="#services">تصوير الأعراس</a></li>
+    <li><a href="#services">تصوير حفلات التخرج</a></li>
+    <li><a href="#services">تصوير المناسبات العائلية والخاصة</a></li>
+    <li><a href="#services">جلسات تصوير شخصية</a></li>
+    <li><a href="#services">تصوير المنتجات</a></li>
+    <li><a href="#services">خدمات تعديل الصور</a></li>
+    <li><a href="#services">خدمة الماشطة (تلبيس العروس مع الإكسسوارات)</a></li>
+    <li><a href="#services">كراء تصديرة العروس</a></li>
+    <li><a href="#services">تنظيم الأعراس والمناسبات</a></li>
+    <li><a href="#services">فرقة استقبال ومنع التصوير + تنسيق بليبوشات</a></li>
+    <li><a href="#services">خدمة الدي جي</a></li>
+</ul>
+
+
+                </div>
+                
+                <div class="footer-col">
+                    <h3>اتصل بنا</h3>
+                 <ul class="footer-links">
+    <li>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+213776575143">+213 776 575 143</a>
+    </li>
+    <li>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:hadjerziad@gmail.com">hadjerziad@gmail.com</a>
+    </li>
+    <li>
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://www.google.com/maps/place/Bouira,+Algeria" target="_blank">Bouira, Algeria</a>
+    </li>
+</ul>
+
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Ziad Grapher. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active">العربية</button>
+        <button class="lang-btn">Français</button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
