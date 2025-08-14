@@ -1,4 +1,3 @@
-
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile Menu Toggle
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -125,17 +124,7 @@
                 });
             });
             
-            // Contact Form Submission
-            const contactForm = document.getElementById('contactForm');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Here you would typically send the form data to a server
-                // For this example, we'll just show an alert
-                alert('شكرًا لتواصلك معنا! سنرد عليك في أقرب وقت ممكن.');
-                contactForm.reset();
-            });
+        
             
             // Animation on Scroll
             const animateElements = document.querySelectorAll('.about-img, .about-content, .contact-info, .contact-form');
