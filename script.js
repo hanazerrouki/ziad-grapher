@@ -34,16 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================
-    // FILM STRIP GALLERY - Parallax & Lightbox
+    // FILM STRIP GALLERY - Parallax & Lightbox (NO CHANGES)
     // ============================================
     
-    // Get film strip elements
     const filmStrip1 = document.querySelector('.film-strip-1');
     const filmStrip2 = document.querySelector('.film-strip-2');
     const filmStrip3 = document.querySelector('.film-strip-3');
     const filmFrames = document.querySelectorAll('.film-frame');
     
-    // Parallax Scroll Effect - Different speeds for each strip
     function initParallax() {
         if (!filmStrip1 || !filmStrip2 || !filmStrip3) return;
         
@@ -60,12 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         const galleryBottom = galleryTop + gallerySection.offsetHeight;
                         const viewportMiddle = window.scrollY + window.innerHeight / 2;
                         
-                        // Only apply parallax when gallery is in view
                         if (viewportMiddle > galleryTop && viewportMiddle < galleryBottom) {
                             const progress = (scrollY - galleryTop) / (gallerySection.offsetHeight);
                             const limitedProgress = Math.min(Math.max(progress, 0), 1);
                             
-                            // Different speeds for each strip
                             const y1 = limitedProgress * 60;
                             const y2 = limitedProgress * 100;
                             const y3 = limitedProgress * 140;
@@ -82,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Lightbox functionality for film frames
     function initLightbox() {
         filmFrames.forEach(frame => {
             frame.addEventListener('click', function(e) {
@@ -143,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Add loading animation for film frames
     function initLoadingAnimation() {
         filmFrames.forEach((frame, index) => {
             frame.style.opacity = '0';
@@ -157,7 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Initialize film strip features
     initParallax();
     initLightbox();
     initLoadingAnimation();
@@ -179,32 +172,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll reveal animation for other sections
-    const revealElements = document.querySelectorAll('.camera-card, .booking-content, .booking-image, .social-invite');
+    // Scroll reveal animation for camera frames
+    const cameraFrames = document.querySelectorAll('.vintage-camera-frame');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(30px)';
                 entry.target.style.transition = 'all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
             }
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
     
-    revealElements.forEach(el => {
+    cameraFrames.forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(40px)';
+        el.style.transform = 'translateY(30px)';
         observer.observe(el);
     });
     
-    // Hover animations for camera cards
-    const cameraCards = document.querySelectorAll('.camera-card');
-    cameraCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-8px)';
+    // Hover animations for camera frames
+    const cameraFramesHover = document.querySelectorAll('.vintage-camera-frame');
+    cameraFramesHover.forEach(frame => {
+        frame.addEventListener('mouseenter', () => {
+            frame.style.transform = 'translateY(-5px)';
         });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0)';
+        frame.addEventListener('mouseleave', () => {
+            frame.style.transform = 'translateY(0)';
         });
     });
 });
