@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>لوحة التحكم | Bella Grapher</title>
+    <meta name="theme-color" content="#ff6b8b">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="login-section" class="login-section">
+            <div class="login-card">
+                <div class="login-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h2>لوحة التحكم</h2>
+                <p>الرجاء إدخال كلمة المرور للدخول</p>
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="password" id="admin-password" placeholder="كلمة المرور" required>
+                    </div>
+                    <button type="submit" class="btn-login">
+                        <i class="fas fa-sign-in-alt"></i>
+                        دخول
+                    </button>
+                    <div id="login-error" class="error-message"></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard Section (Hidden by default) -->
+        <div id="dashboard-section" class="dashboard-section" style="display: none;">
+            <header class="admin-header">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-camera"></i>
+                        <span>Bella Grapher</span>
+                        <small>لوحة التحكم</small>
+                    </div>
+                    <button id="logout-btn" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        تسجيل الخروج
+                    </button>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <h3 id="pending-bookings">0</h3>
+                            <p>حجوزات قيد الانتظار</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="stat-info">
+                            <h3 id="confirmed-bookings">0</h3>
+                            <p>حجوزات مؤكدة</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="stat-info">
+                            <h3 id="total-bookings">0</h3>
+                            <p>إجمالي الحجوزات</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-actions">
+                    <button id="refresh-btn" class="action-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        تحديث
+                    </button>
+                </div>
+
+                <!-- Bookings Table -->
+                <div class="bookings-table-container">
+                    <h3>قائمة الحجوزات</h3>
+                    <div class="table-wrapper">
+                        <table id="bookings-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الاسم</th>
+                                    <th>الهاتف</th>
+                                    <th>الموقع</th>
+                                    <th>نوع المناسبة</th>
+                                    <th>التاريخ</th>
+                                    <th>الخدمات</th>
+                                    <th>الحالة</th>
+                                    <th>الإجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookings-tbody">
+                                <tr>
+                                    <td colspan="9" class="loading">جاري تحميل البيانات...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

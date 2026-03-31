@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>حجز موعد | Bella Grapher</title>
+    <meta name="description" content="احجزي موعدك لجلسة تصوير احترافية مع Bella Grapher">
+    <meta name="theme-color" content="#ff6b8b">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">📷</div>
+                <span class="logo-text">Bella Grapher</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#gallery">الأعمال</a></li>
+                    <li><a href="index.html#services-photo">خدمات التصوير</a></li>
+                    <li><a href="index.html#services-extra">خدمات إضافية</a></li>
+                    <li><a href="booking.html" class="active">حجز</a></li>
+                    <li><a href="index.html#contact">اتصال</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Page Content -->
+    <section class="booking-page" id="booking-page">
+        <div class="container">
+            <div class="booking-header">
+                <span class="section-subtitle">احجزي جلسة التصوير</span>
+                <h1 class="page-title">سارعي لحجز موعدك</h1>
+                <p class="page-desc">اختر التاريخ المناسب لك، وحدد الخدمات التي ترغبين بها، وسنكون سعداء بتوثيق أجمل لحظاتك</p>
+            </div>
+
+            <!-- Main Camera-Shaped Booking Form -->
+            <div class="camera-frame-container">
+                <div class="vintage-camera-frame booking-camera">
+                    <div class="camera-flash-btn"></div>
+                    <div class="camera-shutter-btn"></div>
+                    <div class="camera-lens-area">
+                        <div class="lens-content booking-lens-content">
+                            <div class="lens-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h2 class="lens-title">نموذج الحجز</h2>
+                            
+                            <form id="booking-form" class="booking-form">
+                                <!-- Full Name -->
+                                <div class="form-group">
+                                    <label for="fullname">
+                                        <i class="fas fa-user"></i>
+                                        الاسم الكامل
+                                    </label>
+                                    <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الكامل">
+                                </div>
+
+                                <!-- Phone Number -->
+                                <div class="form-group">
+                                    <label for="phone">
+                                        <i class="fas fa-phone"></i>
+                                        رقم الهاتف
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+213 XX XX XX XX">
+                                </div>
+
+                                <!-- Location - Bouira Only -->
+                                <div class="form-group">
+                                    <label for="location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        مكان المناسبة (ولاية البويرة)
+                                    </label>
+                                    <select id="location" name="location" required>
+                                        <option value="">-- اختر المنطقة --</option>
+                                        <option value="البويرة">البويرة (المركز)</option>
+                                        <option value="سور الغزلان">سور الغزلان</option>
+                                        <option value="الأخضرية">الأخضرية</option>
+                                        <option value="بشلول">بشلول</option>
+                                        <option value="حيزر">حيزر</option>
+                                        <option value="قادرية">قادرية</option>
+                                        <option value="العجيبة">العجيبة</option>
+                                        <option value="أعمر">أعمر</option>
+                                        <option value="الحدائق">الحدائق</option>
+                                        <option value="الدعمات">الدعمات</option>
+                                        <option value="الرايس">الرايس</option>
+                                        <option value="الزبربر">الزبربر</option>
+                                        <option value="الشماتية">الشماتية</option>
+                                        <option value="العشار">العشار</option>
+                                        <option value="العمرية">العمرية</option>
+                                        <option value="المقراني">المقراني</option>
+                                        <option value="معالة">معالة</option>
+                                        <option value="الولجة">الولجة</option>
+                                        <option value="تاغزوت">تاغزوت</option>
+                                        <option value="أحلاف">أحلاف</option>
+                                        <option value="أصوام">أصوام</option>
+                                    </select>
+                                </div>
+
+                                <!-- Event Type -->
+                                <div class="form-group">
+                                    <label for="event-type">
+                                        <i class="fas fa-camera"></i>
+                                        نوع المناسبة
+                                    </label>
+                                    <select id="event-type" name="event-type" required>
+                                        <option value="">-- اختر نوع المناسبة --</option>
+                                        <option value="wedding">عرس / زفاف</option>
+                                        <option value="engagement">خطوبة</option>
+                                        <option value="graduation">تخرج</option>
+                                        <option value="portrait">جلسة شخصية</option>
+                                        <option value="event">مناسبة خاصة</option>
+                                    </select>
+                                </div>
+
+                                <!-- Additional Services Checklist -->
+                                <div class="form-group">
+                                    <label>
+                                        <i class="fas fa-plus-circle"></i>
+                                        خدمات إضافية
+                                    </label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="makeup">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-crown"></i> خدمة الماشطة
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="dj">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-music"></i> دي جي DJ
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="dress-rental">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-tshirt"></i> كراء تصديرة
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="decoration">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-paint-brush"></i> كراء ديكور
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="reception">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-hand-sparkles"></i> فرقة استقبال
+                                        </label>
+                                        <label class="checkbox-item">
+                                            <input type="checkbox" name="services" value="organization">
+                                            <span class="checkmark"></span>
+                                            <i class="fas fa-chess-queen"></i> تنظيم الأعراس
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Calendar Selection -->
+                                <div class="form-group calendar-group">
+                                    <label>
+                                        <i class="fas fa-calendar-alt"></i>
+                                        اختر تاريخ المناسبة
+                                    </label>
+                                    <div id="calendar-container"></div>
+                                    <input type="hidden" id="selected-date" name="event-date" required>
+                                    <div id="date-error" class="error-message"></div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="lens-btn submit-btn">
+                                    <i class="fas fa-check-circle"></i>
+                                    إرسال طلب الحجز
+                                </button>
+
+                                <div id="form-message" class="form-message"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Info (No working hours, only service area) -->
+            <div class="booking-info-footer">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>مواعيد الخدمة</h4>
+                    <p>يومياً من 8:00 صباحاً حتى 12:00 مساءً</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>منطقة الخدمة</h4>
+                    <p>ولاية البويرة وجميع بلدياتها</p>
+                    <p>خدمة التصوير متاحة في جميع مناطق البويرة</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>للتواصل والاستفسار</h4>
+                    <p><a href="tel:+213776575143">+213 776 575 143</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>📷 Bella Grapher</h3>
+                    <p>تصوير فوتوغرافي احترافي للأعراس والمناسبات. نخلد لحظاتكم بأجمل صورة.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/bella_photographer199" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/18HnEcLgKb/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/213776575143" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">الرئيسية</a></li>
+                        <li><a href="index.html#gallery">الأعمال</a></li>
+                        <li><a href="index.html#services-photo">خدمات التصوير</a></li>
+                        <li><a href="index.html#services-extra">خدمات إضافية</a></li>
+                        <li><a href="booking.html">حجز</a></li>
+                        <li><a href="index.html#contact">اتصال</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>اتصل بنا</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> <a href="tel:+213776575143">+213 776 575 143</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> بويرة، الجزائر</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Bella Grapher. جميع الحقوق محفوظة.</p>
+                <p class="developer-credit">made by: @hana.zerrouki</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="booking.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
